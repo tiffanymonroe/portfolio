@@ -3,6 +3,11 @@
 
 }*/
 
+@font-face {
+  font-family: 'Bongiorno';
+  src: url('../fonts/bongiorno.otf');
+}
+
 body {
   color: black;
   font-family: 'Josefin Sans', sans-serif;
@@ -10,9 +15,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, section.navbar-text.navbar-right.name {
-  font-family: 'The Girl Next Door', cursive;
-  color: #4DB6AC;
-}
+font-family: 'Bongiorno';
+color: #4DB6AC;
+font-size: 3.5rem;
+  }
 
 nav {
   color: white;
@@ -93,4 +99,46 @@ nav ul a, p {
 
 .carousel-indicators {
   display: none;
+}
+
+.transform {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.transform:hover, .transform:after {
+  text-align: center;
+  color: #4DB6AC;
+  font-size: 5rem;
+  cursor: pointer;
+  padding: 20px;
+}
+
+@media (max-height: 780px) {
+  .about, .contact {
+    padding: 5%;
+    margin-top: 10%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50%;
+  }
+
+  .contact {
+    font-size: 2rem;
+  }
+  .contact > section a:hover {
+    color: #4DB6AC;
+    font-size: 2rem;
+  }
+
+  .contact > section {
+    text-align: center;
+  }
+
+
 }
