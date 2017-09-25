@@ -66,6 +66,7 @@ nav ul a, p {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 70%;
 }
 
 .portfolio {
@@ -80,20 +81,16 @@ nav ul a, p {
   text-align: center;
 }
 
-.col-xs-4 > img {
-  height: 252px;
-  width: 90%;
-  margin: 5%;
 
+.carousel-control.left, .carousel-control.right  {
+  background-image: none;
 }
 
-img.img-thumbnail.img-responsive {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15), 0 2px 4px 0 rgba(0, 0, 0, 0.17), 0 1px 10px 0 rgba(0, 0, 0, 0.16);
-  /*box shadow from W3 Schools*/
+.item > p {
+  padding: 30px;
+  text-align: center;
 }
 
-img.img-thumbnail.img-responsive:hover, .img-thumbnail:hover {
-  box-shadow: 0 0 20px rgba(77,182,172, 0.5);
-  border-color: rgba(77,182,172);
-  /*box shadow from W3 Schools*/
+.carousel-indicators {
+  display: none;
 }
