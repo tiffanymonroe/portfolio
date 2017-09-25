@@ -1,0 +1,99 @@
+/** {
+  border: 1px solid hotpink;
+
+}*/
+
+body {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, section.navbar-text.navbar-right.name {
+  font-family: 'The Girl Next Door', cursive;
+  color: #4DB6AC;
+}
+
+nav {
+  color: white;
+  font-size: 2.5rem;
+  vertical-align: text-bottom;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.name {
+  padding-right: 25px;
+}
+.main-img {
+  /*left: 0px;
+  top: 0px;*/
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+.contact > section a, .contact > section a:visited {
+  color: black;
+  font-size: 4rem;
+  padding: 4rem;
+}
+
+.contact > section a:hover {
+  color: #4DB6AC;
+  font-size: 4rem;
+}
+
+.contact > section {
+  text-align: center;
+}
+
+nav ul a, p {
+
+  font-size: 2rem;
+}
+
+/*Modals*/
+
+.about, .contact {
+  padding: 10%;
+  margin-top: 10%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio {
+  background-color: white;
+  margin-top: 75%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+}
+
+.portfolio > h2 {
+  text-align: center;
+}
+
+.col-xs-4 > img {
+  height: 252px;
+  width: 90%;
+  margin: 5%;
+
+}
+
+img.img-thumbnail.img-responsive {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15), 0 2px 4px 0 rgba(0, 0, 0, 0.17), 0 1px 10px 0 rgba(0, 0, 0, 0.16);
+  /*box shadow from W3 Schools*/
+}
+
+img.img-thumbnail.img-responsive:hover, .img-thumbnail:hover {
+  box-shadow: 0 0 20px rgba(77,182,172, 0.5);
+  border-color: rgba(77,182,172);
+  /*box shadow from W3 Schools*/
+}

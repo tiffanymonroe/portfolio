@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html ng-app="website">
+<head>
+  <meta charset="utf-8">
+  <title>Write | Code</title>
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|The+Girl+Next+Door" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Anglular-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+
+
+</head>
+<body ng-controller="MainController as ctrl">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+      <ul class="nav navbar-nav">
+        <li ng-click="ctrl.toggleAbout()"><a>About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="http://www.tiffanymonroe.com/GA_Outcomes_Resume.pdf">Résumé</a></li>
+        <li ng-click="ctrl.toggleContact()"><a>Contact</a></li>
+      </ul>
+      <section class="navbar-text navbar-right name">Tiffany Monroe</section>
+    </div>
+  </nav>
+
+  <img src="img/ZedProMedia_Latte_Macbook.jpg" alt="Zed Pro Media Latte Macbook" class="main-img img-responsive"/>
+  <div class="container-fluid">
+
+
+    <!-- About -->
+
+    <div ng-show="ctrl.about" ng-click="ctrl.toggleAbout()" class="about col-xs-8 col-xs-offset-2">
+      <h2>About Me</h2>
+      <p>I’m a writer, whether it’s poetry or code, that loves taking a blank screen and bringing it to life. Because of my writing and teaching experience, I can explain complex ideas simply and spot errors quickly. I build apps with clean, readable code—and lots of coffee.</p>
+    </div>
+
+
+
+    <!-- Contact -->
+    <div ng-click="ctrl.toggleContact()" class="row">
+      <div ng-show="ctrl.contact" class="contact col-xs-8 col-xs-offset-2">
+        <h2>Contact</h2>
+        <section>
+          <a href="mailto:hello@tiffanymonroe.com"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://github.com/tiffanymonroe"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tiffanymonroe/"><i class="fa fa-linkedin-square"></i></a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="portfolio container-fluid">
+    <h2>Portfolio</h2>
+    <div class="row">
+      <div class="col-xs-4">
+        <img class="img-thumbnail img-responsive" src="./img/projects/project_3.png" alt="project 3"/>
+      </div>
+      <div class="col-xs-4">
+        <img class="img-thumbnail img-responsive" src="./img/projects/" alt="project 4"/>
+      </div>
+      <div class="col-xs-4">
+        <img class="img-thumbnail img-responsive" src="./img/projects/" alt="project 5"/>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-xs-4">
+        <img class="img-thumbnail img-responsive" src="./img/projects/portola_mockup_thumbnail.png" alt="Portola Mockup"/>
+      </div>
+      <div class="col-xs-4">
+        <img class="img-thumbnail img-responsive" src="./img/projects/book_database.png" alt="Book Database"/>
+      </div>
+      <div class="col-xs-4">
+        <img class="img-thumbnail img-responsive" src="./img/projects/project_2.png" alt="Project 2"/>
+      </div>
+    </div>
+
+
+  </div> <!-- end container -->
+
+  <!-- jQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!--JS-->
+  <script src="js/app.js"></script>
+
+  </html>
