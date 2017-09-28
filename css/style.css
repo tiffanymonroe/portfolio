@@ -104,6 +104,11 @@ nav ul a, p {
   display: none;
 }
 
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+  width: 70%;
+  margin: auto;
+}
+
 .transform {
   text-align: center;
   color: black;
@@ -115,7 +120,6 @@ nav ul a, p {
 .transform:hover, .transform:after {
   text-align: center;
   color: #4DB6AC;
-  font-size: 5rem;
   cursor: pointer;
   padding: 20px;
 }
