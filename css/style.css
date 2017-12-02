@@ -27,6 +27,10 @@ h2 {
   text-align: center;
 }
 
+.col-sm-4 > p {
+  padding: 1em;
+  text-align: center;
+}
 
 
 /*Navbar*/
@@ -62,10 +66,32 @@ h2 {
   position: absolute;
 }
 
+.img-thumbnail {
+  height: 200px;
 
+  -webkit-transition:all 0.3s linear;
+  -moz-transition:all 0.3s linear;
+  -ms-transition:all 0.3s linear;
+  -o-transition:all 0.3s linear;
+  transition:all 0.3s linear;
+}
+
+.img-thumbnail:hover {
+  -webkit-transform:translateY(7px);
+  -moz-transform:translateY(7px);
+  -ms-transform:translateY(7px);
+  -o-transform:translateY(7px);
+  transform:translateY(7px);
+}
 
 
 /*Modals*/
+
+#portfolio {
+  margin-top: 9%;
+  padding-bottom: 3em;
+}
+
 #contact, #about {
   margin-top: 15%;
 }
