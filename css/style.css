@@ -7,16 +7,23 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: 'Bongiorno';
+  color: #4DB6AC
 }
 
-.title {
+
+
+h1 {
     animation: 3s alternate slidein;
     margin-top: 10%;
     margin-left: 70%;
     font-size: 7em;
-    color: #4DB6AC;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
 }
 
 .navbar {
@@ -37,10 +44,14 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
+#contact, #about {
+  margin-top: 15%;
+}
+
 .contact > section a, .contact > section a:visited {
   color: black;
-  font-size: 4rem;
-  padding: 4rem;
+  font-size: 3rem;
+  padding: 3rem;
 
   -webkit-transition:all 0.3s linear;
   -moz-transition:all 0.3s linear;
@@ -64,6 +75,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.88);
+}
 /* Animations */
 
 @keyframes slidein {
