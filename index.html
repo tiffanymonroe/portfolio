@@ -26,8 +26,15 @@
   <body ng-controller="MainController as ctrl">
 
     <!-- Navigation -->
-    <nav class="navbar" style="background-color: ">
-      <ul class="nav">
+    <nav class="navbar navbar-expand-lg">
+
+      <!-- Navbar collapse from GirlGang -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="fa fa-bars" style="color: white"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
           <a class="nav-link active" href="#" data-toggle="modal" data-target="#about" ng-click="ctrl.hidePortfolio()">About</a>
         </li>
@@ -41,6 +48,7 @@
           <a class="nav-link" href="#" data-toggle="modal" data-target="#contact" ng-click="ctrl.hidePortfolio()">Contact</a>
         </li>
       </ul>
+    </div>
     </nav>
 
 
