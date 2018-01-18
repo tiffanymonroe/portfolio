@@ -13,9 +13,6 @@
   text-align: center;
 }
 
-.dnc-img {
-
-}
 
 
 
@@ -28,8 +25,8 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
   animation:
-    typing 5.5s steps(40, end),
-    blink-caret .75s step-end 6s;
+    typing 5s steps(40, end),
+    blink-caret .75s step-end 5s;
 }
 
 /* The typing effect */
@@ -54,9 +51,9 @@
   animation:delay ease-in 1;
 
   /* Delays animation until after typewriter stops */
-  -webkit-animation-delay:6s;
-  -moz-animation-delay:6s;
-  animation-delay:6s;
+  -webkit-animation-delay:5s;
+  -moz-animation-delay:5s;
+  animation-delay:5s;
 
   /* Length of time to show text */
   -webkit-animation-duration:.5s;
