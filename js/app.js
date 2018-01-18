@@ -30,6 +30,8 @@ app.controller('MainController', ['$http', function($http){
 
 }]); //end of controller
 
+
+
 app.controller('DncController', ['$http', function($http){
   const controller = this;
 
@@ -40,19 +42,19 @@ app.controller('DncController', ['$http', function($http){
   this.micDrop = true;
 
 //Activate buttons
-  this.showQualifications = function(){
-    this.qualifications = false;
+  this.toggleQualifications = function(){
+    this.qualifications =! this.qualifications;
   }
 
-  this.showBackground = function(){
-    this.background = false;
+  this.toggleBackground = function(){
+    this.background =! this.background;
   }
 
-  this.showMission = function(){
-    this.mission = false;
+  this.toggleMission = function(){
+    this.mission =! this.mission;
   }
 
-  this.showMicDrop = function(){
-    this.micDrop = false;
+  this.toggleMicDrop = function(){
+    this.micDrop =! this.micDrop;
   }
 }]); //end of DNC Controller
