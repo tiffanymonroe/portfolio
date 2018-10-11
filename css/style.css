@@ -346,40 +346,46 @@ template {
 
 /* ==================================================================================== */
 
+@font-face {
+    font-family: 'CatchFeels';
+    src: url('../fonts/CatchFeels-Regular.eot') format('eot'), url('../fonts/CatchFeels-Regular.woff') format('woff'), url('../fonts/CatchFeels-Regular.woff2') format('woff2');;
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-  font-weight: 700;
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'CatchFeels';
 }
 
 h1 {
-  padding-bottom: 3rem;
-  border-bottom: 1px solid white;
   font-size: 72px;
   line-height: 44px;
-  font-weight: 800;
 }
 
+
 h2 {
-  font-size: 40px;
+  font-size: 48px;
+  letter-spacing: 6px;
 }
 
 h3 {
-  font-size: 28px;
-  color: rgb(52, 72, 96);
+  font-size: 36px;
+  color: rgb(50, 49, 56);
 }
 
 .hero {
   overflow-x: hidden;
   overflow-y: hidden;
   padding-bottom: 0px;
-  background: linear-gradient(0deg,rgba(52, 72, 96, 0.5),rgba(52, 72, 96, 0.5)), url(../img/ZedProMedia_Latte_Macbook.jpg);
+  background: linear-gradient(0deg,rgba(101, 99, 112, 0.5),rgba(101, 99, 112, 0.5)), url(../img/ZedProMedia_Latte_Macbook.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -389,7 +395,7 @@ h3 {
   z-index: 1;
   opacity: 1;
   margin: 0 auto;
-  margin-top: 15%;
+  margin-top: 17%;
   width: 55%;
   text-align: center;
   color: white;
@@ -397,11 +403,13 @@ h3 {
 
 .navbar {
   flex-direction: row;
-  font-size: 1rem;
-  background-color: rgb(52, 72, 96);
-  height: 3.25rem;
+  font-size: 1.5rem;
+  background-color: rgb(50, 49, 56);
+  height: 3rem;
+  font-family: 'CatchFeels';
   text-align: center;
   width: 100%;
+  height: auto;
 }
 
 .nav-link, .nav-link:hover {
@@ -410,11 +418,10 @@ h3 {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1rem;
-
 }
 
 .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(101, 99, 112, 0.8);
 }
 
 .tech {
@@ -435,14 +442,29 @@ h3 {
 }
 
 #portfolio {
-  height: 200vh;
+  height: 100vh;
+  width: 80%;
 }
 
-#portfolio > p {
+
+.img-thumbnail {
+  width: 200px;
+  height: 200px;
+}
+
+.img-thumbnail:hover {
+}
+
+.contact-card {
   text-align: center;
 }
 
-.img-thumbnail {
-  width: 300px;
-  height: auto;
+.fab, .far {
+  font-size: 2.5rem;
+  color: rgb(50, 49, 56);
+  padding: 1rem;
+}
+
+.fab:hover, .far:hover {
+  color: rgba(101, 99, 112, 0.8);
 }
