@@ -11,6 +11,9 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Angular -->
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script> -->
+
   <!-- JavaScript -->
   <script type="text/javascript" src="js/app.js"></script>
   </head>
@@ -19,19 +22,33 @@
       <div class="title-card">
         <h1>Tiffany Monroe</h1>
         <h2>Front End weB Developer</h2>
+        <i class="fas fa-chevron-down"></i>
       </div>
+
     </div>
 
     <nav class="navbar">
         <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#tech" onclick="animateIcons();">Tech</a>
         <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="http://www.tiffanymonroe.com/tiffany_monroe_website_resume_oct2018.pdf" target="_blank">Résumé</a>
     </nav>
 
-    <div class="section" id="about">
-      <h3>About</h3>
-      <p>I’m a writer, whether it’s poetry or code, that loves taking a blank screen and bringing it to life. Because of my writing and teaching experience, I can explain complex ideas simply and spot errors quickly. I build apps with clean, readable code—and lots of coffee.</p>
+    <div class="section" id="tech">
+      <div class="skills">
+        <h3>Tech Skills</h3>
+        <span class="icon" id="html"><p>HTML</p></span>
+        <span class="icon" id="css"><p>CSS</p></span>
+        <span class="icon" id="bootstrap"><p>Bootstrap</p></span>
+        <span class="icon" id="javascript"><p>JavaScript</p></span>
+        <span class="icon" id="jquery"><p>jQuery</p></span>
+        <span class="icon" id="angular"><p>Angular</p></span>
+        <span class="icon" id="react"><p>React</p></span>
+      </div>
+
+
     </div>
 
     <div class="section" id="portfolio">
@@ -57,6 +74,14 @@
 
 
     </div>
+
+    <div class="section" id="about">
+      <h3>About</h3>
+      <p>I’m a writer, whether it’s poetry or code, that loves taking a blank screen and bringing it to life. Because of my writing and teaching experience, I can explain complex ideas simply and spot errors quickly. I build apps with clean, readable code—and lots of coffee. </p>
+
+    </div>
+
+
 
     <div class="section" id="contact">
       <h3>Contact</h3>
