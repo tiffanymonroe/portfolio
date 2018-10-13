@@ -370,7 +370,6 @@ h1 {
 
 }
 
-
 h2 {
   font-size: 48px;
   letter-spacing: 6px;
@@ -432,10 +431,7 @@ h3 {
   background-color: rgba(101, 99, 112, 0.8);
 }
 
-.tech {
-  margin-top: 10%;
-}
-
+/*       Sections       */
 
 .section {
   margin-top: 10%;
@@ -443,14 +439,7 @@ h3 {
   margin-right: auto;
 }
 
-
-#about, #contact {
-  height: 40vh;
-  width: 60%;
-}
-
-
-/* ============================================= */
+/* Tech Skills */
 
 #tech {
   width: 85%;
@@ -486,16 +475,13 @@ h3 {
   -ms-transition:all 0.3s linear;
   -o-transition:all 0.3s linear;
   transition:all 0.3s linear;
-
-
 }
 
 .icon > p {
   margin-top: 40%;
 }
 
-
-/* ============================================= */
+/* Portfolio */
 
 #portfolio  {
   height: 100vh;
@@ -510,9 +496,20 @@ h3 {
 .img-thumbnail:hover {
 }
 
+/* About */
+
+#about, #contact {
+  height: 40vh;
+  width: 60%;
+}
+
+/* Contact */
+
 .contact-card {
   text-align: center;
 }
+
+/*     Icons     */
 
 .fab, .far, .fas {
   font-size: 2.5rem;
@@ -537,7 +534,7 @@ h3 {
 }
 
 
-/* Animations */
+/*     Animations     */
 
 @keyframes typing {
   from { width: 0 }
