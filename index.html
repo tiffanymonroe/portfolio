@@ -1,170 +1,97 @@
-<!doctype html>
-<html lang="en" ng-app="website">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <title>Tiffany Monroe | Web Developer</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tiffany Monroe | Front End Web Developer</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- Angular -->
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script> -->
 
-
-    <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--Anglular-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
-    <script src="js/app.js"></script>
-
+  <!-- JavaScript -->
+  <script type="text/javascript" src="js/app.js"></script>
   </head>
-  <body ng-controller="MainController as ctrl">
+  <body>
+    <div class="hero">
+      <div class="title-card">
+        <h1>Tiffany Monroe</h1>
+        <h2>Front End weB Developer</h2>
+        <i class="fas fa-chevron-down"></i>
+      </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-
-      <!-- Navbar collapse from GirlGang -->
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="fa fa-bars" style="color: white"></span>
-        </button>
-
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#" data-toggle="modal" data-target="#about" ng-click="ctrl.hidePortfolio()">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" ng-click="ctrl.showPortfolio()" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.tiffanymonroe.com/tiffany_monroe_website_resume_jan2018.pdf" target="_blank">Résumé</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" data-toggle="modal" data-target="#contact" ng-click="ctrl.hidePortfolio()">Contact</a>
-        </li>
-      </ul>
     </div>
+
+    <nav class="navbar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#tech" onclick="animateIcons();">Tech</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="http://www.tiffanymonroe.com/tiffany_monroe_website_resume_oct2018.pdf" target="_blank">Résumé</a>
     </nav>
 
+    <div class="section" id="tech">
+      <div class="skills">
+        <h3>Tech Skills</h3>
+        <span class="icon" id="html"><p>HTML</p></span>
+        <span class="icon" id="css"><p>CSS</p></span>
+        <span class="icon" id="bootstrap"><p>Bootstrap</p></span>
+        <span class="icon" id="javascript"><p>JavaScript</p></span>
+        <span class="icon" id="jquery"><p>jQuery</p></span>
+        <span class="icon" id="angular"><p>Angular</p></span>
+        <span class="icon" id="react"><p>React</p></span>
+      </div>
 
 
-    <img class="img-fluid main-img" src="img/ZedProMedia_Latte_Macbook.jpg" alt="Image by Zed Pro Media" ng-show="ctrl.main"/>
-    <h1 id="title" ng-show="ctrl.title">Tiffany Monroe</h1>
+    </div>
 
+    <div class="section" id="portfolio">
+      <h3>Portfolio</h3>
 
-    <div class="container">
+          <a href="https://dadjoketime.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_3.png" alt="project 3"/></a>
 
-    <!-- Portfolio -->
-    <div id="portfolio" ng-show="ctrl.portfolio">
-      <h2>Portfolio</h2>
+          <a class="transform" href="https://disneyland-decoded.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_5.png" alt="project 5"></a>
 
+          <a class="transform" href="https://pawnee.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/pawnee.png" alt="Parks and Rec"></a>
 
-    <div class="row">
-      <div class="col-sm-4">
           <a href="https://creative-blogging.herokuapp.com" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_2.png" alt="Project 2"/></a>
-          <p>HTML, CSS, Node.js, MongoDB, Mongoose, Express</p>
-      </div>
 
-      <div class="col-sm-4">
-            <a class="transform" href="https://github.com/tiffanymonroe/portola-mockup" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/portola_mockup_thumbnail.png" alt="Portola Mockup"/></a>
-            <p>HTML, CSS, Node.js, MongoDB, Mongoose, Express</p>
-      </div>
+          <a class="transform" href="https://github.com/tiffanymonroe/portola-mockup" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/portola_mockup_thumbnail.png" alt="Portola Mockup"/></a>
 
-      <div class="col-sm-4">
-            <a href="https://dadjoketime.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_3.png" alt="project 3"/></a>
-            <p>HTML, CSS, MEAN Stack</p>
-      </div>
+          <a class="transform" href="http://travel-books.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_4.png" alt="project 4"/></a>
+
+          <a class="transform" href="https://bookarchiveproject.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/book_database.png" alt="Book Database"/></a>
+
+          <a class="transform" href="http://tiffanymonroe.com/dirtcakes/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/dirtcakes.png" alt="dirtcakes"></a>
+
+          <a class="transform" href="http://tiffanymonroe.com/ron_swanson/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/ron_swanson.png" alt="Ron Swanson"></a>
+
+
+    </div>
+
+    <div class="section" id="about">
+      <h3>About</h3>
+      <p>I’m a writer, whether it’s poetry or code, that loves taking a blank screen and bringing it to life. Because of my writing and teaching experience, I can explain complex ideas simply and spot errors quickly. I build apps with clean, readable code—and lots of coffee. </p>
+
     </div>
 
 
-    <div class="row">
-      <div class="col-sm-4">
-            <a class="transform" href="http://travel-books.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_4.png" alt="project 4"/></a>
-            <p>HTML, CSS, Angular.js, Node.js, Ruby on Rails</p>
-      </div>
 
-      <div class="col-sm-4">
-            <a class="transform" href="https://bookarchiveproject.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/book_database.png" alt="Book Database"/></a>
-            <p>HTML, CSS, MEAN Stack</p>
-      </div>
-
-      <div class="col-sm-4">
-            <a class="transform" href="https://disneyland-decoded.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_5.png" alt="project 5"></a>
-            <p>HTML, CSS, Angular.js, Node.js, Ruby on Rails</p>
+    <div class="section" id="contact">
+      <h3>Contact</h3>
+      <div class="contact-card">
+        <a href="http://github.com/tiffanymonroe"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/tiffanymonroe/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://codepen.io/tiffanymonroe/"><i class="fab fa-codepen"></i></a>
+        <a href="mailto:hello@tiffanymonroe.com"><i class="far fa-envelope"></i></a>
       </div>
     </div>
 
-
-    <div class="row">
-      <div class="col-sm-4">
-            <a class="transform" href="http://tiffanymonroe.com/dirtcakes/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/dirtcakes.png" alt="dirtcakes"></a>
-            <p>HTML, CSS</p>
-      </div>
-
-      <div class="col-sm-4">
-            <a class="transform" href="http://tiffanymonroe.com/ron_swanson/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/ron_swanson.png" alt="Ron Swanson"></a>
-            <p>HTML, CSS, JavaScript, Angular.js</p>
-      </div>
-
-      <div class="col-sm-4">
-            <a class="transform" href="https://pawnee.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/pawnee.png" alt="Parks and Rec"></a>
-            <p>HTML, CSS, MERN Stack</p>
-      </div>
-    </div>
-      <center><span class="fa fa-times-circle" ng-click="ctrl.hidePortfolio()" style="font-size: 2em"></span><center>
-    </div>
-
-      <!-- Modals -->
-
-      <!-- About Me -->
-      <div class="modal fade" id="about">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title">About Me</h2>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" class="fa fa-times-circle"></span>
-              </button>
-            </div>
-            <div class="modal-body about">
-              <p>I’m a writer, whether it’s poetry or code, that loves taking a blank screen and bringing it to life. Because of my writing and teaching experience, I can explain complex ideas simply and spot errors quickly. I build apps with clean, readable code—and lots of coffee.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact -->
-      <div class="modal fade" id="contact">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title">Contact</h2>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" class="fa fa-times-circle"></span>
-              </button>
-            </div>
-            <div class="modal-body contact">
-              <section class="contact">
-                    <a href="mailto:hello@tiffanymonroe.com"><i class="fa fa-envelope-o"></i></a>
-                    <a href="https://github.com/tiffanymonroe"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/tiffanymonroe/"><i class="fa fa-linkedin-square"></i></a>
-              </section>
-            </div>
-          </div>
-        </div>
-      </div>
-
-</div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>
