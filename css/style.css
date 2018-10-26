@@ -439,6 +439,14 @@ h3 {
   margin-right: auto;
 }
 
+/* About */
+
+#about, #contact {
+  height: 40vh;
+  width: 60%;
+}
+
+
 /* Tech Skills */
 
 #tech {
@@ -466,11 +474,9 @@ h3 {
 #jquery { animation: popup 3.8s; }
 #angular { animation: popup 4s; }
 #react { animation: popup 4.2s; }
-<<<<<<< HEAD
-=======
 #express { animation: popup 4.4s; }
 #node { animation: popup 4.6s; }
->>>>>>> bfb91a9f6b8d1899100895e8b2eb81d9b50259dc
+
 
 .icon:hover {
   background-color: #4DB6AC;
@@ -510,12 +516,6 @@ h3 {
   transition:all 0.3s linear;
 }
 
-/* About */
-
-#about, #contact {
-  height: 40vh;
-  width: 60%;
-}
 
 /* Contact */
 
