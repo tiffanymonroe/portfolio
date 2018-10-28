@@ -2,94 +2,55 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tiffany Monroe | Web Developer</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- JavaScript -->
-  <script type="text/javascript" src="js/app.js"></script>
-
   </head>
   <body>
-    <div class="hero">
-      <div class="title-card">
-        <h1>Tiffany Monroe</h1>
-        <h2 class="headline">• weB Developer • </h2>
-        <i class="fas fa-chevron-down"></i>
+    <div class="full-width" id="hero">
+      <h1>Tiffany Monroe</h1>
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#tech">Technology</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="http://www.tiffanymonroe.com/tiffany_monroe_resume_oct2018.pdf">Résumé</a></li>
+          </ul>
+      </nav>
+    </div>
+
+    <div class="full-width" id="about">
+      <h2>A little bit about me.</h2>
+      <div class="half-width">
+        <p>My love of storytelling led me, in a roundabout way, to web development. I graduated with an MFA in Creative Writing and worked as a college writing instructor. I started to code as a hobby. I loved it so much that I decided to go through an immersive program with over 500 hours of instruction in three months. I discovered, then, that writing code is similar to writing poetry. It needs to have the most impact in the fewest lines. It creates an experience for the user. It tells a story.</p>
       </div>
-
-    </div>
-
-    <nav class="navbar">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#tech" onclick="animateIcons();">Tech</a>
-        <a class="nav-link" href="#portfolio">Portfolio</a>
-        <a class="nav-link" href="#contact">Contact</a>
-        <a class="nav-link" href="http://www.tiffanymonroe.com/tiffany_monroe_resume_oct2018.pdf" target="_blank">Résumé</a>
-    </nav>
-
-
-    <div class="section" id="about">
-      <h3>About</h3>
-      <p>I’m a writer, whether it’s poetry or code, who loves taking a blank screen and bringing it to life. Because of my writing and teaching experience, I can explain complex ideas simply and spot errors quickly. I build apps with clean, readable code—and lots of coffee. </p>
-    </div>
-
-    <div class="section" id="tech">
-      <div class="skills">
-        <h3>Tech Skills</h3>
-        <span class="icon" id="html"><p>HTML</p></span>
-        <span class="icon" id="css"><p>CSS</p></span>
-        <span class="icon" id="bootstrap"><p>Bootstrap</p></span>
-        <span class="icon" id="javascript"><p>JavaScript</p></span>
-        <span class="icon" id="jquery"><p>jQuery</p></span>
-        <span class="icon" id="angular"><p>Angular</p></span>
-        <span class="icon" id="react"><p>React</p></span>
-        <span class="icon" id="express"><p>Express</p></span>
-        <span class="icon" id="node"><p>Node</p></span>
+      <div class="half-width">
+        <p>I love working on the front-end because it’s where code meets creativity. It’s where my experience teaching digital rhetoric helps me understand how to take an idea and build it into a useful feature through JavaScript, CSS, and some good ol’ HTML. I love learning new frameworks like Angular or React and figuring out challenges with my research skills. I also continue to practice building full stack apps with clean code—and lots of coffee.</p>
       </div>
     </div>
 
-    <div class="section" id="portfolio">
-      <h3>Portfolio</h3>
+    <div class="full-width" id="tech">
+        <div class="third-width">
 
-          <a href="https://dadjoketime.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_3.png" alt="project 3"/></a>
+        </div>
 
-          <a class="transform" href="https://disneyland-decoded.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_5.png" alt="project 5"></a>
+        <div class="third-width">
 
-          <a class="transform" href="https://pawnee.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/pawnee.png" alt="Parks and Rec"></a>
+        </div>
 
-          <a href="https://creative-blogging.herokuapp.com" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_2.png" alt="Project 2"/></a>
+        <div class="third-width">
 
-          <a class="transform" href="https://github.com/tiffanymonroe/portola-mockup" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/portola_mockup_thumbnail.png" alt="Portola Mockup"/></a>
+        </div>
+    </div>
 
-          <a class="transform" href="http://travel-books.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/project_4.png" alt="project 4"/></a>
-
-          <a class="transform" href="https://bookarchiveproject.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/book_database.png" alt="Book Database"/></a>
-
-          <a class="transform" href="http://tiffanymonroe.com/dirtcakes/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/dirtcakes.png" alt="dirtcakes"></a>
-
-          <a class="transform" href="http://tiffanymonroe.com/ron_swanson/" target="_blank"><img class="img-thumbnail img-responsive" src="./img/projects/ron_swanson.png" alt="Ron Swanson"></a>
-
+    <div class="full-width" id="work">
 
     </div>
 
+    <div class="full-width" id="contact">
 
-
-
-    <div class="section" id="contact">
-      <h3>Contact</h3>
-      <div class="contact-card">
-        <a href="http://github.com/tiffanymonroe" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/tiffanymonroe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://codepen.io/tiffanymonroe/" target="_blank"><i class="fab fa-codepen"></i></a>
-        <a href="mailto:hello@tiffanymonroe.com"><i class="far fa-envelope"></i></a>
-      </div>
     </div>
 
   </body>
