@@ -16,6 +16,19 @@ h1, h2, h3, h4 {
   font-family: 'Cormorant Upright', serif;
   font-weight: 700;
 }
+h1 {
+  animation: easein 3s;
+  color: #71A4A4;
+  display: inline-block;
+  font-size: 2em;
+  padding: 0 ;
+  text-align: center;
+  width: 30%;
+}
+h2 {
+  font-size: 1.7em;
+  padding-left: 1.2em;
+}
 .full-width {
   display: inline-block;
   width: 100%;
@@ -47,15 +60,6 @@ h1, h2, h3, h4 {
   height: 100vh;
 }
 
-h1 {
-  color: #71A4A4;
-  display: inline-block;
-  font-size: 2em;
-  padding: 0 ;
-  text-align: center;
-  width: 30%;
-}
-
 nav {
   display: inline-block;
   float: right;
@@ -81,16 +85,14 @@ nav ul li a:hover {
 }
 
 /* About */
+#about  {
+  height: 75vh;
+}
 #about .half-width {
   padding: 1.2em;
+  line-height: 1.4em;
   margin-left: 1em;
 }
-
-h2 {
-  margin-left: 1.5em;
-}
-
-
 
 /* Technology */
 #tech {
@@ -108,7 +110,7 @@ h2 {
 }
 #tech p {
   font-size: 1.1em;
-  text-align: justify;
+  text-align: left;
 }
 #tech h3 i {
   color: #5A8383;
@@ -121,23 +123,23 @@ h2 {
 
 
 /* Work */
+#work {
+  margin-top: 5%;
+}
 #work .fourth-width {
     height: 75vh;
     margin: 1.7em;
 }
-
 .row {
   text-align: center;
 }
-
 .thumbnail {
   width: 200px;
-  height: 200px;
+  height: 155px;
   padding: 1em;
 }
 
 .thumbnail:hover {
-  height: auto;
   transform: scale(1.1);
   -webkit-transition:all 0.3s linear;
   -moz-transition:all 0.3s linear;
@@ -146,11 +148,6 @@ h2 {
   transition:all 0.3s linear;
 }
 
-/* Quote */
-#quote {
-  background-color: #EFEFEF;
-  height: 100vh;
-}
 
 /* Contact */
 #contact-img {
@@ -169,21 +166,19 @@ h2 {
 #contact ul li {
   display: inline-block;
   list-style: none;
-  padding: 1.3em;
+  padding: 1em;
   text-align: center;
 }
 #contact ul li a {
   color: #71A4A4;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 2.2em;
 }
-#contact ul li a:hover {
-  transform: scale(1.1);
-  -webkit-transition:all 0.3s linear;
-  -moz-transition:all 0.3s linear;
-  -ms-transition:all 0.3s linear;
-  -o-transition:all 0.3s linear;
-  transition:all 0.3s linear;
+#contact ul li a i {
+
+}
+#contact ul li a i:hover {
+  color: black;
 }
 
 /* Animations */
@@ -193,6 +188,15 @@ h2 {
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@keyframes easein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
