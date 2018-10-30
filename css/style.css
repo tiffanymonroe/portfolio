@@ -172,13 +172,19 @@ nav ul li a:hover {
 #contact ul li a {
   color: #71A4A4;
   text-decoration: none;
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 #contact ul li a i {
 
 }
 #contact ul li a i:hover {
-  color: black;
+  color: #385252;
+}
+
+/* Footer */
+footer {
+  padding: 1em;
+  text-align: center;
 }
 
 /* Animations */
