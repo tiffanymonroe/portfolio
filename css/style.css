@@ -31,22 +31,26 @@ h2 {
 }
 .full-width {
   display: inline-block;
+  overflow: auto;
   width: 100%;
 }
 .half-width {
   display: inline-block;
   float: left;
   height: 100%;
+  overflow: auto;
   width: 45%;
 }
 .third-width {
   display: inline-block;
   float: left;
+  overflow: auto;
   width: 30%;
 }
 .fourth-width {
   display: inline-block;
   float: left;
+  overflow: auto;
   width: 20%;
 }
 
@@ -86,7 +90,8 @@ nav ul li a:hover {
 
 /* About */
 #about  {
-  height: 75vh;
+  min-height: 75vh;
+  clear: both;
 }
 #about .half-width {
   padding: 1.2em;
@@ -97,7 +102,7 @@ nav ul li a:hover {
 /* Technology */
 #tech {
   background-color: #E0EBEB;
-  clear: both;;
+  clear: both;
   line-height: 1.5em;
   min-height: 80vh
 }
@@ -212,3 +217,21 @@ footer {
 }
 
 /* Mobile */
+@media (max-width: 400px) {
+  body {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  .half-width, .third-width, .fourth-width, #contact-info {
+    float: none;
+    width: 90%;
+  }
+
+
+
+}
