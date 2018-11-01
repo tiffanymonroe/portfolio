@@ -132,7 +132,7 @@ nav ul li a:hover {
   margin-top: 5%;
 }
 #work .fourth-width {
-    height: 75vh;
+    min-height: 75vh;
     margin: 1.5em;
 }
 .row {
@@ -232,7 +232,6 @@ footer {
     width: 90%;
   }
 }
-
 @media (min-width: 1080px) {
   #about .half-width {
     padding: .75em;
@@ -259,5 +258,9 @@ footer {
   }
   #tech h3 i {
     font-size: 2em;
+  }
+  #work .fourth-width {
+    margin: 1em;
+    width: 45%;
   }
 }
