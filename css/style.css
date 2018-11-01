@@ -231,7 +231,33 @@ footer {
     float: none;
     width: 90%;
   }
+}
 
-
-
+@media (min-width: 1080px) {
+  #about .half-width {
+    padding: .75em;
+    line-height: 1.4em;
+  }
+}
+@media (max-width: 1080px) {
+  #about .half-width {
+    float: none;
+    padding: .75em;
+    line-height: 1.4em;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 75%;
+  }
+  #tech .third-width {
+    float: none;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+  }
+  #tech p {
+    font-size: 1em;
+  }
+  #tech h3 i {
+    font-size: 2em;
+  }
 }
