@@ -10,7 +10,6 @@
 body {
   font-family: 'Pontiac Light', sans-serif;
   font-weight: normal;
-  font-size: 18px;
 }
 h1, h2, h3, h4 {
   font-family: 'Cormorant Upright', serif;
@@ -20,38 +19,23 @@ h1 {
   animation: easein 3s;
   color: #71A4A4;
   display: inline-block;
-  font-size: 2em;
-  padding: 0 ;
+  padding: 0;
   text-align: center;
   width: 30%;
-}
-h2 {
-  font-size: 1.7em;
-  padding-left: 1.2em;
 }
 .full-width {
   display: inline-block;
   width: 100%;
 }
-.half-width {
+.half-width, .third-width, .fourth-width {
   display: inline-block;
-  float: left;
-  height: 100%;
-  width: 45%;
 }
-.third-width {
-  display: inline-block;
-  float: left;
-  width: 30%;
-}
+
 .fourth-width {
   display: inline-block;
-  float: left;
-  width: 20%;
 }
 
 /* Hero */
-
 #hero {
   background: url('../hero.png');
   background-repeat: no-repeat;
@@ -69,12 +53,12 @@ nav {
 }
 
 nav ul li {
-  display: inline-block;
+  /* display: inline-block; */
   list-style: none;
 }
 
 nav ul li a {
-  padding: 1em;
+
   text-decoration: none;
   color: black;
 }
@@ -86,7 +70,7 @@ nav ul li a:hover {
 
 /* About */
 #about  {
-  height: 75vh;
+  min-height: 75vh;
 }
 #about .half-width {
   padding: 1.2em;
@@ -102,12 +86,6 @@ nav ul li a:hover {
   min-height: 80vh
 }
 
-#tech .third-width {
-  padding: 1em;
-  margin: 0 auto;
-  overflow: auto;
-  text-align: center;
-}
 #tech p {
   font-size: 1.1em;
   text-align: left;
@@ -211,51 +189,87 @@ footer {
   }
 }
 
-/* Mobile */
-@media (max-width: 400px) {
-  body {
-    font-size: 1em;
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 400px) {
+  nav ul li {
+    display: block;
   }
-  h1 {
-    font-size: 1.5em;
+  nav ul li a {
+    margin: .25em;
+    padding: .25em;
   }
-  h2 {
-    font-size: 1.3em;
+  #about h2 {
+    margin: 1em;
   }
-  .half-width, .third-width, .fourth-width, #contact-info {
-    float: none;
-    width: 90%;
-  }
-}
-@media (min-width: 1080px) {
-  #about .half-width {
-    padding: .75em;
-    line-height: 1.4em;
-  }
-}
-@media (max-width: 1080px) {
   #about .half-width {
     float: none;
-    padding: .75em;
+    padding: 1em;
     line-height: 1.4em;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 75%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
   }
+
   #tech .third-width {
     float: none;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 70%;
   }
-  #tech p {
-    font-size: 1em;
+}
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #about .half-width {
+    margin-left: 1%;
+    margin-right: 1%;
   }
-  #tech h3 i {
+  #about .half-width, .half-width {
+    float: left;
+    height: 100%;
+    width: 45%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  nav {
+    width: 70%;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 1em;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Base Styles */
+  h1 {
     font-size: 2em;
   }
+  h2 {
+    font-size: 1.7em;
+    padding-left: 1.2em;
+  }
+
+  /* Technology */
+
+  #tech .third-width {
+    float: left;
+    padding: 1em;
+    margin: 0 auto;
+    overflow: auto;
+    text-align: center;
+    width: 30%;
+  }
   #work .fourth-width {
-    margin: 1em;
-    width: 45%;
+    float: left;
+    width: 20%;
   }
 }
