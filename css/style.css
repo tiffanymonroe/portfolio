@@ -72,7 +72,11 @@ nav ul li a:hover {
 #about  {
   min-height: 75vh;
 }
+#about h2 {
+  padding-left: 0;
+}
 #about .half-width {
+  font-size: 18px;
   padding: 1.2em;
   line-height: 1.4em;
   margin-left: 1em;
@@ -85,12 +89,15 @@ nav ul li a:hover {
   line-height: 1.5em;
   min-height: 80vh
 }
-
+#tech h3 {
+  font-family: 'Pontiac Regular';
+  font-size: 21px;
+}
 #tech p {
   font-size: 1.1em;
   text-align: left;
 }
-#tech h3 i {
+#tech i {
   color: #5A8383;
   font-size: 3em;
   padding: .25em;
@@ -104,9 +111,8 @@ nav ul li a:hover {
 #work {
   margin-top: 5%;
 }
-#work .fourth-width {
-    height: 75vh;
-    margin: 1.5em;
+#work .half-width {
+  margin-bottom: 3em;
 }
 .row {
   text-align: center;
@@ -124,11 +130,9 @@ nav ul li a:hover {
   -o-transition:all 0.3s linear;
   transition:all 0.3s linear;
 }
-
-.fourth-width p {
+#work .half-width p {
   font-family: 'Pontiac Regular';
   font-size: 16px;
-  margin-left: 1em;
   width: 100%;
 }
 
