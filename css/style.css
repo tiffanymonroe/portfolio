@@ -77,6 +77,13 @@ nav ul li a:hover {
   line-height: 1.4em;
   margin-left: 1em;
 }
+#about a {
+  color: #71A4A4;
+  text-decoration: none;
+}
+#about a:hover {
+    font-weight: bold;
+}
 
 /* Technology */
 #tech {
