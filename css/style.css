@@ -31,10 +31,6 @@ h1 {
   display: inline-block;
 }
 
-.fourth-width {
-  display: inline-block;
-}
-
 /* Hero */
 #hero {
   background: url('../hero.png');
@@ -223,6 +219,10 @@ footer {
   }
 }
 @media (min-width: 576px) {
+  #tech .fourth-width {
+    padding: 2%;
+    width: 40%;
+  }
 
 }
 
@@ -237,6 +237,9 @@ footer {
     height: 100%;
     width: 45%;
   }
+  #work .fourth-width {
+    width: 30%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -248,7 +251,9 @@ footer {
     display: inline-block;
     padding: 1em;
   }
-
+  #work .fourth-width {
+    width: 30%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -274,6 +279,7 @@ footer {
   }
   #work .fourth-width {
     float: left;
+    padding: 2%;
     width: 20%;
   }
 }
