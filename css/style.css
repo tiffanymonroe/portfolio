@@ -7,6 +7,7 @@
   font-family: 'Pontiac Light';
   src: url('../fonts/pontiac-light.otf') format('opentype');
 }
+
 body {
   font-family: 'Pontiac Light', sans-serif;
   font-weight: normal;
@@ -15,6 +16,7 @@ h1, h2, h3, h4 {
   font-family: 'Cormorant Upright', serif;
   font-weight: 700;
 }
+
 h1 {
   animation: easein 3s;
   color: #71A4A4;
@@ -23,6 +25,8 @@ h1 {
   text-align: center;
   width: 30%;
 }
+
+
 .full-width {
   display: inline-block;
   width: 100%;
@@ -89,10 +93,11 @@ nav ul li a:hover {
 /* Technology */
 #tech {
   background-color: #E0EBEB;
-  clear: both;;
+  clear: both;
   line-height: 1.5em;
-  min-height: 80vh
+  min-height: 80vh;
 }
+
 #tech h3 {
   font-family: 'Pontiac Regular';
   font-size: 21px;
