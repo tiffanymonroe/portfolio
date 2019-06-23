@@ -9,8 +9,8 @@
 }
 
 body {
-  font-family: 'Pontiac Light', sans-serif;
-  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 h1, h2, h3, h4 {
   font-family: 'Cormorant Upright', serif;
@@ -47,26 +47,25 @@ h1 {
 nav {
   display: inline-block;
   float: right;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
-  width: 60%;
+  width: 65%;
 }
 
 nav ul li {
-  /* display: inline-block; */
   list-style: none;
   padding: 10px;
 }
 
+
 nav ul li a {
   text-decoration: none;
   color: black;
+  padding: 10px;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
   background-color: #E0EBEB;
-  font-family: 'Pontiac Regular';
-  padding: 10px;
 }
 
 /* About */
@@ -92,19 +91,28 @@ nav ul li a:hover {
 
 /* Technology */
 #tech {
-  background-color: #E0EBEB;
   clear: both;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   line-height: 1.5em;
   min-height: 80vh;
 }
-
+#tech .third-width {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
 #tech h3 {
-  font-family: 'Pontiac Regular';
+  font-family: 'Montserrat', sans-serif;
   font-size: 21px;
+  font-weight: 600;
 }
 #tech p {
   font-size: 1.1em;
   text-align: left;
+  min-height: 75px;
 }
 #tech i {
   color: #5A8383;
@@ -120,18 +128,24 @@ nav ul li a:hover {
 #work {
   margin-top: 5%;
 }
+#work h2 {
+  padding-bottom: 2em;
+}
 #work .half-width {
   margin-bottom: 3em;
 }
 .row {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .thumbnail {
   width: 250px;
   height: 190px;
   padding: 1em;
 }
-.thumbnail:hover {
+.thumbnail:hover, .logo:hover {
   transform: scale(1.1);
   -webkit-transition:all 0.3s linear;
   -moz-transition:all 0.3s linear;
@@ -140,9 +154,29 @@ nav ul li a:hover {
   transition:all 0.3s linear;
 }
 #work .half-width p {
-  font-family: 'Pontiac Regular';
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   width: 100%;
+}
+
+.img-container {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-container p {
+
+}
+
+#upworthy {
+  width: 50%;
+}
+
+#swaay {
+  width: 75%;
 }
 
 /* Contact */
