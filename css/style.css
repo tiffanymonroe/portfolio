@@ -1,13 +1,4 @@
 /* Base Styles */
-@font-face {
-  font-family: 'Pontiac Regular';
-  src: url('../fonts/pontiac-regular.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Pontiac Light';
-  src: url('../fonts/pontiac-light.otf') format('opentype');
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -160,23 +151,46 @@ nav ul li:hover {
 }
 
 .img-container {
-  min-height: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-
-.img-container p {
-
+.responsive-img {
+  width: 80%;
+  height: auto;
+}
+.upworthy p {
+  font-weight: 700;
 }
 
-#upworthy {
-  width: 50%;
-}
+/* Work Animations */
+.work-container {
 
-#swaay {
-  width: 75%;
+}
+.projects-container {
+
+
+}
+.upworthy-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.swaay-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+@keyframes slide {
+  from {
+
+  }
+  to {
+
+  }
 }
 
 /* Contact */
