@@ -116,7 +116,55 @@ nav ul li:hover {
 
 
 /* Work */
+.panels {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.panel {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+}
 
+.panel1 {}
+.panel2 {}
+.panel3 {}
+.panel4 {}
+.panel5 {}
+.panel6 {}
+
+/* Panels (flex children) */
+.panel > * {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  margin: 0;
+  transition: transform 0.5s;
+  width: 100%;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel.open {
+  flex: 5;
+}
 
 /* Contact */
 #contact-img {
