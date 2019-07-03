@@ -266,7 +266,7 @@ footer {
 /* ======================================= */
 
 /* Phones */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   nav {
     width: 20%;
   }
@@ -282,7 +282,7 @@ footer {
   #about, #tech {
     min-height: 50vh;
   }
-}
+} */
 
 /* Tablets  */
 @media (min-width: 992px) {
