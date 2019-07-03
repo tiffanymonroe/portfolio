@@ -60,18 +60,13 @@ nav ul li:hover {
 }
 
 /* About */
-#about  {
-  height: 75vh;
 
-}
 #about h2 {
   padding-left: 0;
   margin: 1em;
 
 }
-#about section {
-  display: flex;
-}
+
 #about .half-width {
   font-size: 18px;
   float: none;
@@ -336,5 +331,12 @@ footer {
   nav ul li {
     display: inline-block;
     padding: 1em;
+  }
+  #about  {
+    min-height: 100vh;
+  }
+  #about section {
+    display: flex;
+    flex-direction: row;
   }
 }
