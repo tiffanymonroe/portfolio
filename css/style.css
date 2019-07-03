@@ -183,34 +183,28 @@ nav ul li:hover {
   font-weight: 700;
 }
 
-/* Work Animations */
-.work-container {
-
-}
-.projects-container {
-
-
-}
-.upworthy-container {
-
+.projects-container .logo-container {
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.swaay-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.logo-container img {
+  min-height: 105px;
 }
-@keyframes slide {
-  from {
 
-  }
-  to {
-
-  }
+.logo-container a {
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+  font-size: 1em;
+  text-transform: uppercase;
 }
+
+.logo-container a:hover {
+  font-weight: 700;
+}
+
 
 /* Contact */
 #contact-img {
