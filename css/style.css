@@ -116,6 +116,25 @@ nav ul li:hover {
 
 
 /* Work */
+
+/* ==================== */
+
+/* Animations from TM  */
+.shown-on-scroll {
+    animation-delay: 0.25s;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+/* ==================== */
+
 #work {
   margin-top: 5%;
 }
