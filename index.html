@@ -3,92 +3,99 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Fonts -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:400,700|Source+Sans+Pro" rel="stylesheet">
+
+    <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- CSS -->
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
     <title>Tiffany Monroe | Web Developer</title>
   </head>
   <body>
-    <div class="full-width" id="hero">
-      <nav>
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#tech">Technology</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="http://www.tiffanymonroe.com/tiffany_monroe_resume_oct2018.pdf" target="_blank">Résumé</a></li>
+
+    <div class="container-fluid" id="hero">
+      <nav class="navbar navbar-expand">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tech">Technology</a></li>
+              <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="http://www.tiffanymonroe.com/tiffany_monroe_resume_oct2018.pdf" target="_blank">Résumé</a></li>
           </ul>
       </nav>
       <h1>Tiffany Monroe</h1>
+      <!-- image goes here -->
       </div>
-    </div>
 
-    <div class="full-width" id="about">
+
+    <div class="container-fluid" id="about">
       <h2>A little bit about me.</h2>
-      <div class="half-width">
+      <div class="col-sm-6">
         <p>My love of storytelling led me, in a roundabout way, to web development. I graduated with a dual degree in English and Creative Writing, then worked as a college writing instructor. I started to code as a hobby. I loved it so much that I decided to go through an immersive program with over 500 hours of instruction in three months. I discovered, then, that writing code is similar to writing poetry. It needs to have the most impact in the fewest lines. It tells a story.</p>
       </div>
-      <div class="half-width">
+      <div class="col-sm-6">
         <p>I love working on the front end because it's where code meets creativity. It's where my experience teaching digital rhetoric helps me understand how to take an idea and build it into a useful feature through JavaScript, CSS, and some good ol’ HTML. I love learning new frameworks, like Angular or React, and figuring out challenges with my research skills. I also continue to practice building full stack apps.</p>
       </div>
     </div>
 
-    <div class="full-width" id="tech">
+    <div class="container-fluid" id="tech">
       <h2></h2>
-        <div class="third-width">
+        <div class="col-sm-4">
           <h3><i class="far fa-image"></i><i class="fas fa-code"></i></h3>
           <p>I take your vision—whether it's Adobe XD, Photoshop, or a drawing on a napkin—and turn it into a pixel perfect match.</p>
           <p>I write clean, semantic HTML5 by hand to make sure that the content is always easy to read, maintain, and troubleshoot.</p>
         </div>
 
-        <div class="third-width">
+        <div class="col-sm-4">
           <h3><i class="fas fa-desktop"></i><i class="fas fa-tablet-alt"></i></h3>
           <p>I focus on keeping my CSS lean and fast to load, and I make it a habit to stay up to date on current best practices.</p>
           <p>I build responsive, mobile-first apps using vanilla CSS or tools, such as Bootstrap.</p>
         </div>
 
-        <div class="third-width">
+        <div class="col-sm-4">
           <h3><i class="fab fa-js"></i><i class="fab fa-react" id="react"></i></h3>
           <p>I use computational thinking to solve problems and write vanilla JavaScript to create dynamic websites.</p>
           <p>I add exciting features with JavaScript libraries such as jQuery, React, or Angular.</p>
         </div>
     </div>
 
-    <div class="full-width" id="work">
+    <div class="container-fluid" id="work">
         <h2>Portfolio</h2>
         <div class="row">
-          <div class="fourth-width">
-            <a href="http://tiffanymonroe.com/jubilee" target="_blank"><img class="thumbnail" src="img/projects/jubilee.png" alt="Jubilee Austen" /></a>
+          <div class="col">
+            <a href="http://tiffanymonroe.com/jubilee" target="_blank"><img  class="thumbnail" src="img/projects/jubilee.png" alt="Jubilee Austen" /></a>
             <p>HTML / CSS from PSD</p>
           </div>
 
-          <div class="fourth-width">
+          <div class="col">
             <a href="http://tiffanymonroe.com/rogue" target="_blank"><img class="thumbnail" src="img/projects/rogue.png" alt="Rogue Pickings" /></a>
             <p>HTML / CSS from PSD</p>
           </div>
 
-          <div class="fourth-width">
+          <div class="col">
             <a href="https://pawnee.herokuapp.com/" target="_blank"><img class="thumbnail" src="img/projects/pawnee.png" alt="Pawnee, Indiana" /></a>
             <p>MongoDB, Express.js, React.js, Node.js</p>
           </div>
 
-          <div class="fourth-width">
+          <div class="col">
             <a href="#"><img class="thumbnail" src="img/projects/portola_mockup_thumbnail.png" alt="Portola Mockup"/></a>
             <p>MongoDB, Express.js, Node.js, Bootstrap</p>
           </div>
         </div>
     </div>
 
-    <div class="full-width" id="contact">
-        <div class="half-width">
+    <div class="container-fluid" id="contact">
+        <div class="col-sm-6">
           <img id="contact-img" src="img/coffee_contact.jpg" alt="Contact Me">
         </div>
 
-        <div class="half-width" id="contact-info">
+        <div class="col-sm-6" id="contact-info">
           <h2>Contact</h2>
           <ul>
               <li><a href="mailto:hello@tiffanymonroe.com" target="_blank"><i class="far fa-envelope"></i></a></li>
@@ -100,5 +107,9 @@
     </div>
 
     <footer>Made with <i class="fas fa-coffee"></i> by Tiffany Monroe</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

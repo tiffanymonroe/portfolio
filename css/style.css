@@ -1,263 +1,77 @@
 /* Base Styles */
-@font-face {
-  font-family: 'Pontiac Regular';
-  src: url('../fonts/pontiac-regular.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Pontiac Light';
-  src: url('../fonts/pontiac-light.otf') format('opentype');
-}
 body {
-  font-family: 'Pontiac Light', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 h1, h2, h3, h4 {
   font-family: 'Cormorant Upright', serif;
   font-weight: 700;
 }
+
+/* Hero */
+#hero { border: 1px solid red; }
 h1 {
   animation: easein 3s;
   color: #71A4A4;
   display: inline-block;
-  font-size: 2em;
-  padding: 0 ;
-  text-align: center;
-  width: 30%;
-}
-h2 {
-  font-size: 1.7em;
-  padding-left: 1.2em;
-}
-.full-width {
-  display: inline-block;
-  overflow: auto;
-  width: 100%;
-}
-.half-width {
-  display: inline-block;
+  padding: 0;
+  text-align: left;
+  width: 50%;
   float: left;
-  height: 100%;
-  overflow: auto;
-  width: 45%;
-}
-.third-width {
-  display: inline-block;
-  float: left;
-  overflow: auto;
-  width: 30%;
-}
-.fourth-width {
-  display: inline-block;
-  float: left;
-  overflow: auto;
-  width: 20%;
+  padding-left: 1em;
+  font-size: 2.3em;
 }
 
-/* Hero */
-
-#hero {
-  background: url('../hero.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 100vh;
-}
-
-nav {
+.navbar {
   display: inline-block;
-  float: right;
   text-align: right;
   text-transform: uppercase;
-  width: 60%;
+  width: 50%;
 }
 
-nav ul li {
-  display: inline-block;
+.nav-item {
   list-style: none;
+  padding: .5em;
 }
 
-nav ul li a {
-  padding: 1em;
+.nav-link {
   text-decoration: none;
+  color: black;
+  padding: .5em;
+}
+
+.nav-link:hover {
+  background-color: #E0EBEB;
   color: black;
 }
 
-nav ul li a:hover {
-  background-color: #E0EBEB;
-  font-family: 'Pontiac Regular'
-}
 
 /* About */
-#about  {
-  min-height: 75vh;
-  clear: both;
-}
-#about .half-width {
-  padding: 1.2em;
-  line-height: 1.4em;
-  margin-left: 1em;
+
+#about {  border: 1px solid hotpink;
+  display: block;
+  position: relative;
 }
 
-/* Technology */
-#tech {
-  background-color: #E0EBEB;
-  clear: both;
-  line-height: 1.5em;
-  min-height: 80vh
-}
+/* Tech */
 
-#tech .third-width {
-  padding: 1em;
-  margin: 0 auto;
-  overflow: auto;
-  text-align: center;
-}
-#tech p {
-  font-size: 1.1em;
-  text-align: left;
-}
-#tech h3 i {
-  color: #5A8383;
-  font-size: 3em;
-  padding: .25em;
-}
-#tech #react {
-  animation: rotate 3s infinite linear;
-}
+#tech { border: 1px solid blue; }
 
 
 /* Work */
-#work {
-  margin-top: 5%;
-}
-#work .fourth-width {
-    height: 75vh;
-    margin: 1.5em;
-}
-.row {
-  text-align: center;
-}
+
+#work { border: 1px solid yellow; }
+
 .thumbnail {
   width: 250px;
   height: 190px;
   padding: 1em;
 }
-.thumbnail:hover {
+.thumbnail:hover, .logo:hover {
   transform: scale(1.1);
   -webkit-transition:all 0.3s linear;
   -moz-transition:all 0.3s linear;
   -ms-transition:all 0.3s linear;
   -o-transition:all 0.3s linear;
   transition:all 0.3s linear;
-}
-
-.fourth-width p {
-  font-family: 'Pontiac Regular';
-  font-size: 16px;
-  margin-left: 1em;
-  width: 100%;
-}
-
-/* Contact */
-#contact-img {
-  height: auto;
-  padding: 2em;
-  width: 90%;
-}
-#contact-info {
-  width: 50%;
-  padding-top: 2em;
-}
-#contact ul {
-  padding-top: 10%;
-  text-align: center;
-}
-#contact ul li {
-  display: inline-block;
-  list-style: none;
-  padding: 1em;
-  text-align: center;
-}
-#contact ul li a {
-  color: #71A4A4;
-  text-decoration: none;
-  font-size: 2.5em;
-}
-#contact ul li a i {
-
-}
-#contact ul li a i:hover {
-  color: #385252;
-}
-
-/* Footer */
-footer {
-  padding: 1em;
-  text-align: center;
-}
-
-/* Animations */
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes easein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Mobile */
-@media (max-width: 400px) {
-  body {
-    font-size: 1em;
-  }
-  h1 {
-    font-size: 1.5em;
-  }
-  h2 {
-    font-size: 1.3em;
-  }
-  .half-width, .third-width, .fourth-width, #contact-info {
-    float: none;
-    width: 90%;
-  }
-}
-
-@media (min-width: 1080px) {
-  #about .half-width {
-    padding: .75em;
-    line-height: 1.4em;
-  }
-}
-@media (max-width: 1080px) {
-  #about .half-width {
-    float: none;
-    padding: .75em;
-    line-height: 1.4em;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 75%;
-  }
-  #tech .third-width {
-    float: none;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-  }
-  #tech p {
-    font-size: 1em;
-  }
-  #tech h3 i {
-    font-size: 2em;
-  }
 }
