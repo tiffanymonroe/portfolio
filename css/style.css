@@ -117,24 +117,6 @@ nav ul li:hover {
 
 /* Work */
 
-/* ==================== */
-
-/* Animations from TM  */
-.shown-on-scroll {
-    animation-delay: 0.25s;
-}
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-/* ==================== */
-
 #work p {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -263,15 +245,24 @@ footer {
 }
 
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  /* * { border: 1px solid red; } */
-  /* #tech .fourth-width {
-    padding: 2%;
-    width: 40%;
-  }  */
+/* ==================== */
 
+/* Animations from TM  */
+.shown-on-scroll {
+    animation-delay: 0.25s;
 }
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+/* ==================== */
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
