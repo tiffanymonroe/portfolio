@@ -58,7 +58,7 @@ nav ul li:hover {
 
 /* About */
 
-#about h2 {
+#about h2 , #work h2 {
   padding-left: 0;
   margin: 1em;
 
@@ -135,12 +135,35 @@ nav ul li:hover {
   }
 /* ==================== */
 
+#work p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+#work .flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 .5em;
+}
 .projects-container {
-  border: 2px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .projects-container section {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 7%;
+}
+.projects-container .flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -166,18 +189,6 @@ nav ul li:hover {
   font-weight: 700;
 }
 
-#work p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  width: 100%;
-}
-#work .flex-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 .5em;
-}
 
 .thumbnail {
   width: 250px;
@@ -301,6 +312,10 @@ footer {
   .projects-container section {
     min-height: 20vh;
   }
+  .projects-container .flex-item {
+    margin: 0 2em;
+    flex: 2;
+  }
   #work .row {
     width: 80%;
   }
@@ -334,7 +349,7 @@ footer {
     flex-direction: row;
   }
   #tech {
-    flex: 2;
+    flex: 1;
     width: 100%;
   }
   #tech .flex-item {
@@ -346,7 +361,8 @@ footer {
   .projects-container section {
     min-height: 50vh;
   }
-  #work .flex-item {
+  .projects-container .flex-item {
+    margin: 0;
     flex: 1;
   }
 
